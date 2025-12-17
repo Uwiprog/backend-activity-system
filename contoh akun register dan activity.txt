@@ -1,0 +1,23 @@
+{
+    "name": "admin",
+    "email": "admin@mail.com",
+    "password": "admin1234",
+    "role": "admin"
+}
+
+TOKEN ADMIN: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzY2MDA5OTQ2LCJleHAiOjE3NjYwOTYzNDZ9.3bEYPzYEbumGM754SxYWMPnOolQ2NcKyWSi77EMoNEA
+
+{
+    "name": "Jokwo",
+    "email": "jokwo@mail.com",
+    "password": "123456",
+    "role": "mahasiswa"
+}
+TOKEN MAHASISWA: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6bnVsbCwicm9sZSI6Im1haGFzaXN3YSIsImlhdCI6MTc2NjAwOTk4NSwiZXhwIjoxNzY2MDk2Mzg1fQ.j-OWIUYq7P3mLMKzCFN4AK8x1CDy8t6AIOKjfbMqySw
+
+{
+  "title": "Workshop Backend",
+  "description": "Belajar JWT dan Middleware",
+  "date": "2025-12-20",
+  "quota": 30
+}

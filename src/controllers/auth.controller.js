@@ -1,20 +1,22 @@
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
-const user = [];
+const users = [];
 
 const register = async (req,res) =>{
     const { name, email, password, role } = req.body;
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    user.push({
+    const newUsers ={
         id: users.legth + 1,
         name,
         email,
         password: hashedPassword,
         role
-    });
+    };
+
+    users.push(newUsers);
 
     res.status(201).json({ message: "Registrasi Berhasil"});
 };
@@ -35,10 +37,12 @@ const login = async (req, res) =>{
     const token = jwt.sign(
         { id: user.id, role: user.role},
         process.env.JWT_SECRET,
-        { expiresIn: "1h"}
+        { expiresIn: "1d"}
     );
 
     res.json({ token })
+
+    console.log("TOKEN DIBUAT:", token);
 };
 
 module.exports = { register, login};
